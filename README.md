@@ -1,6 +1,5 @@
 🤖 AI News Aggregator
-
-An AI-powered news aggregation application that collects the latest technology and artificial intelligence news from multiple sources, scrapes article content, generates AI summaries using a local LLM, and stores everything in PostgreSQL.
+   An AI-powered news aggregation application that collects the latest technology and artificial intelligence news from multiple sources, scrapes article content,    generates AI summaries using a local LLM, and stores everything in PostgreSQL.
 
 🚀 Features
 📰 Fetches AI and technology news using RSS feeds
@@ -11,6 +10,7 @@ An AI-powered news aggregation application that collects the latest technology a
 🔄 Prevents duplicate articles using unique URLs
 🐳 Runs PostgreSQL using Docker
 ⚡ Uses SQLAlchemy ORM for database operations
+
 🏗️ Architecture
 RSS Feeds
     │
@@ -25,6 +25,8 @@ AI Summary Generator (Ollama)
     │
     ▼
 PostgreSQL Database
+
+
 🛠️ Tech Stack
 Technology	Purpose
 Python 3.12	Core application
@@ -37,13 +39,14 @@ BeautifulSoup	Web scraping
 Ollama	Local AI model execution
 Gemma 3	AI summarization model
 Requests	HTTP requests
+
 📰 News Sources
-
 The application currently collects news from:
+ MIT Technology Review
+ VentureBeat AI
+ TechCrunch AI
 
-MIT Technology Review
-VentureBeat AI
-TechCrunch AI
+
 📁 Project Structure
 ai-news-aggregator/
 │
@@ -71,18 +74,17 @@ ai-news-aggregator/
 ├── README.md
 ├── pyproject.toml
 └── uv.lock
+
+
 ⚙️ Prerequisites
-
 Before running the project, make sure you have installed:
-
 Python 3.12+
 Docker Desktop
 Ollama
 UV
+
 🐳 Database Setup
-
 Run PostgreSQL using Docker:
-
 docker run --name ai-news-postgres \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_PASSWORD=postgres \
@@ -206,9 +208,6 @@ Local LLM integration using Ollama
 AI-powered text summarization
 Duplicate detection
 Python project structure and dependency management
-👨‍💻 Author
-
-Abhay Soni
 
 GitHub: github.com/Abhaysoni100
 
